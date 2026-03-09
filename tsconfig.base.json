@@ -1,5 +1,11 @@
 {
-  "compilerOptions": {    "declarationMap": true,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@optiflow/core": ["libs/core/src/index.ts"],
+      "@org/supabase": ["libs/infrastructure/supabase/src/index.ts"]
+    },
+    "declarationMap": true,
     "emitDeclarationOnly": true,
     "importHelpers": true,
     "isolatedModules": true,
@@ -17,5 +23,3 @@
     "customConditions": ["@org/source"]
   }
 }
-
-
